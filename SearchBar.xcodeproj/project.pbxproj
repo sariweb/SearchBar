@@ -13,6 +13,10 @@
 		124B75AC211AB9F800C3669A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 124B75AB211AB9F800C3669A /* Assets.xcassets */; };
 		124B75AF211AB9F800C3669A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 124B75AD211AB9F800C3669A /* LaunchScreen.storyboard */; };
 		124B75B2211AB9F800C3669A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 124B75B1211AB9F800C3669A /* main.m */; };
+		124B75B9211ABA1C00C3669A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 124B75B8211ABA1C00C3669A /* README.md */; };
+		124B75BC211ABAA500C3669A /* NSString+Random.m in Sources */ = {isa = PBXBuildFile; fileRef = 124B75BB211ABAA500C3669A /* NSString+Random.m */; };
+		124B75BF211ABBA900C3669A /* SASection.m in Sources */ = {isa = PBXBuildFile; fileRef = 124B75BE211ABBA900C3669A /* SASection.m */; };
+		124B75C6211AC30100C3669A /* SAStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = 124B75C2211AC30000C3669A /* SAStudent.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,13 @@
 		124B75AE211AB9F800C3669A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		124B75B0211AB9F800C3669A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		124B75B1211AB9F800C3669A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		124B75B8211ABA1C00C3669A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		124B75BA211ABAA400C3669A /* NSString+Random.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Random.h"; sourceTree = "<group>"; };
+		124B75BB211ABAA500C3669A /* NSString+Random.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Random.m"; sourceTree = "<group>"; };
+		124B75BD211ABBA900C3669A /* SASection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SASection.h; sourceTree = "<group>"; };
+		124B75BE211ABBA900C3669A /* SASection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SASection.m; sourceTree = "<group>"; };
+		124B75C2211AC30000C3669A /* SAStudent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAStudent.m; sourceTree = "<group>"; };
+		124B75C4211AC30100C3669A /* SAStudent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAStudent.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,9 +50,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1213CF1D211C00DF0001C048 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				124B75BA211ABAA400C3669A /* NSString+Random.h */,
+				124B75BB211ABAA500C3669A /* NSString+Random.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 		124B7596211AB9F400C3669A = {
 			isa = PBXGroup;
 			children = (
+				124B75B8211ABA1C00C3669A /* README.md */,
 				124B75A1211AB9F400C3669A /* SearchBar */,
 				124B75A0211AB9F400C3669A /* Products */,
 			);
@@ -58,6 +79,8 @@
 		124B75A1211AB9F400C3669A /* SearchBar */ = {
 			isa = PBXGroup;
 			children = (
+				1213CF1D211C00DF0001C048 /* Category */,
+				124B75C0211AC2EA00C3669A /* Model */,
 				124B75A2211AB9F400C3669A /* AppDelegate.h */,
 				124B75A3211AB9F400C3669A /* AppDelegate.m */,
 				124B75A5211AB9F400C3669A /* ViewController.h */,
@@ -69,6 +92,17 @@
 				124B75B1211AB9F800C3669A /* main.m */,
 			);
 			path = SearchBar;
+			sourceTree = "<group>";
+		};
+		124B75C0211AC2EA00C3669A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				124B75BD211ABBA900C3669A /* SASection.h */,
+				124B75BE211ABBA900C3669A /* SASection.m */,
+				124B75C4211AC30100C3669A /* SAStudent.h */,
+				124B75C2211AC30000C3669A /* SAStudent.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -97,6 +131,7 @@
 		124B7597211AB9F400C3669A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = SA;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = SA;
 				TargetAttributes = {
@@ -130,6 +165,7 @@
 			files = (
 				124B75AF211AB9F800C3669A /* LaunchScreen.storyboard in Resources */,
 				124B75AC211AB9F800C3669A /* Assets.xcassets in Resources */,
+				124B75B9211ABA1C00C3669A /* README.md in Resources */,
 				124B75AA211AB9F400C3669A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,7 +177,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				124B75BC211ABAA500C3669A /* NSString+Random.m in Sources */,
+				124B75BF211ABBA900C3669A /* SASection.m in Sources */,
 				124B75A7211AB9F400C3669A /* ViewController.m in Sources */,
+				124B75C6211AC30100C3669A /* SAStudent.m in Sources */,
 				124B75B2211AB9F800C3669A /* main.m in Sources */,
 				124B75A4211AB9F400C3669A /* AppDelegate.m in Sources */,
 			);
